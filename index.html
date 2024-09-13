@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Game - True or False</title>
+</head>
+
+<body style="background-image: url('assets/images/bg.png');">
+    
+    <div id="welcome-screen">
+        <h1>Welcome to Shape Game</h1>
+        <input type="text" id="player-name" placeholder="Enter your name">
+        <button id="start-game">Play</button>
+    </div>
+
+
+    <div class="header">
+        True or false
+    </div>
+
+
+    <div class="sub-header">
+        <div id="score">Score: 0</div>
+        <div id="level">Level 1</div>
+        <div id="lives">❤️❤️❤️</div>
+    </div>
+
+
+    <div id="game-container"></div>
+
+
+    <div class="question-area">
+        <span id="target-shape"></span> = <span id="target-count"></span>
+        <div class="controls">
+            <span>Choose:</span>
+            <button class="true-btn" id="trueBtn">True</button>
+            <button class="false-btn" id="falseBtn">False</button>
+        </div>
+    </div>
+
+
+    <div id="game-over-screen">
+        <h1>Game Over</h1>
+        <div class="score-box">
+            <p>Player: <span id="final-player-name"></span></p>
+            <p>Final Score: <span id="final-score"></span></p>
+            <p>Final Level: <span id="final-level"></span></p>
+        </div>
+        <div class="button-container">
+            <button id="retry-button">Retry</button>
+            <button id="start-over-button">Start Over</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.0.4/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
